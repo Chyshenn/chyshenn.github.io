@@ -1,2 +1,178 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="陳譽升">
+    <meta name="description" content="這是陳譽升的個人履歷網頁，展示他在資傳領域的學習成果與工讀經驗。">
+    <title>個人履歷網頁 - 陳譽升</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS 樣式、修改背景顏色並注意對比 */
+        body {
+            background-color: #f0f4f8; 
+            color: #1a202c;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2d3748;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #ffffff;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-left: 6px solid #4a5568;
+            padding-left: 15px;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        /* 個人照片樣式 */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #cbd5e0;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* 加分項目：反思樣式 */
+        .reflection {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 0.9rem;
+            margin-top: 8px;
+            padding: 8px;
+            background-color: #edf2f7;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>陳譽升的個人履歷</h1>
+    <p>世新大學 資訊傳播學系</p>
+</header>
+
+<div class="container">
+    <section>
+        <img src="myface.jpg" alt="陳譽升清晰個人照" class="profile-img">
+        <h2>關於我 (About)</h2>
+        <p>
+            你好！我是陳譽升，目前就讀於世新大學資訊傳播學系。我對數位媒體創作充滿熱情，擅長影像剪輯與資訊整合。在求學期間，我透過多樣的工讀經驗，
+            如在 Oneboy、Comebuy 與台灣壽司郎工作，培養了極佳的抗壓性、責任感與團隊協作能力。我喜愛將科技與生活結合，例如利用 AI 輔助影片創作，
+            或是透過數位攝影紀錄生活細節。我致力於精進網頁開發與數位傳播技能，期待未來能將這些專長應用於專業領域。
+        </p>
+    </section>
+
+    <section>
+        <h2>經歷 (Experience)</h2>
+        <ul>
+            <li>
+                <strong>Oneboy - 兼職人員</strong>
+                <div class="reflection">反思：在知名機能服飾品牌工作，讓我學會如何精準應對客戶需求，並提升了店務管理的效率。</div>
+            </li>
+            <li>
+                <strong>Comebuy - 兼職人員</strong>
+                <div class="reflection">反思：手搖飲店的快節奏環境磨練了我的應變能力與抗壓性。</div>
+            </li>
+            <li>
+                <strong>台灣壽司郎 (Sushiro) - 服務人員</strong>
+                <div class="reflection">反思：學習到連鎖餐飲的高標準服務流程，以及團隊溝通協作的重要性。</div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>學歷 (Education)</h2>
+        <ul>
+            <li><strong>世新大學 - 資訊傳播學系</strong> (在學中)</li>
+            <li><strong>南崁高中</strong> (畢業)</li>
+            <li><strong>南崁國中</strong> (畢業)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>技能與興趣 (Skills & Interests)</h2>
+        <p><strong>專業技能：</strong> 影像剪輯與腳本企劃、基礎網頁開發 (HTML/CSS)、數位資訊組織、Java 程式設計基礎。</p>
+        <p><strong>個人興趣：</strong> 復古機車改裝 (Yamaha FZ-X 150)、數位攝影、犯罪懸疑影集、Jazzy Hip Hop 音樂。</p>
+    </section>
+
+    <section>
+        <h2>作品集 (Portfolios)</h2>
+        <p style="font-size: 0.8rem; color: #718096;"></p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="wuchung.jpg" alt="AI 影像作品">
+                <h3>AI 輔助短片：武昌起義</h3>
+                <p>運用 AI 工具輔助腳本與剪輯，完成具教育意義的 10 分鐘歷史敘事影片。</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <iframe width="100%" height="150" src="https://www.youtube.com/embed/cNd-twzWuOA?si=3w2rdlPkn2EOwvYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 4px; margin-bottom: 10px;"></iframe>
+                <h3>YouTube 影音作品</h3>
+                <p>影音專案的線上展示與實務剪輯紀錄。</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="moto.jpg" alt="機車改裝紀錄">
+                <h3>FZ-X 150 改裝紀錄</h3>
+                <p>紀錄機車懸吊與制動系統升級過程，展現對機械構造與美學的理解。</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="cat.jpg" alt="攝影作品">
+                <h3>寵物攝影集</h3>
+                <p>收錄家裡寵物的日常生活照，練習構圖與視覺表達。</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
